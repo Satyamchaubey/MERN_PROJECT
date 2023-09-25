@@ -1,0 +1,18 @@
+#footer-main{
+    background-color: blue;
+    position: inherit;
+    top: 0;
+    left: 0;
+    // width: 100%;
+    background-color: #333; /* Set your desired background color */
+    color: #fff; /* Set the text color */
+    height: 20%;
+    
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+    a:hover{
+        color:orange;
+    }
+}

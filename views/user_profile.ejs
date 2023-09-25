@@ -1,0 +1,21 @@
+
+    <h1 class="animate__animated animate__zoomInDown">
+        Hii Buddy! I hope you are well
+    </h1>
+   <% if(user.id == profile_user.id) {%>
+    <!-- if the user match than show the form -->
+     <form action="/users/update/<%=profile_user.id %>" method="POST">
+     <input type="text" name="name" placeholder="Your Name" value="<%= profile_user.name %>" required>
+     <input type="email" name="Email" placeholder="Your Name" value="<%= profile_user.email %>" required>
+     <input type="submit" value="Update">
+    <% }else {%>
+        <!-- else only show the profile name-->
+        <%= profile_user.name %>
+        <br>
+        <%= profile_user.email %>
+    </form>
+
+        <%}%>
+
+     
+ 

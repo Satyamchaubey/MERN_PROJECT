@@ -1,0 +1,41 @@
+<main id="header-main" class="animate__animated animate__bounce">
+<header style="background-color: rgb(182, 208, 250);">
+    <h1 class="typing"> Codeial </h1>
+    <ul>
+        <% if(locals.user){ %>
+            <h3 class="typing">
+                <a href="/users/profile"> Hii! <br> <%= user.name %></a>
+            </h3>
+            <div id="container">
+            <a href="/">Home</a>
+            <p1>
+                <a href="/users/satyam">Main profile</a>
+            </p1>
+            <p1 id="sign-out">
+                 <a href="/users/sign-out">Sign Out</a>
+             </p1>
+            </div>
+        <% } else { %>
+
+            
+             <div id="container">
+            <a href="/users/sign-in" class="a-right">Sign In</a>
+        </p1>
+
+        <p1>
+            <a href="/users/sign-up" class="a-right">Sign Up</a>
+        </p1>
+    </div>
+
+
+            <%}%>
+
+
+
+
+            
+            
+        </ul>
+    
+</header>
+</main>
